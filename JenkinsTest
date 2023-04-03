@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('Preparation'){
             steps{
-                git branch:'main', url:'https://github.com/Raghugithub9/MavenPageFactory.git'
+                git branch:'master', url:''https://github.com/shrumans/Mavenproject.git'
             }
         }
         
