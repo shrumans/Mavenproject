@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('Preparation'){
             steps{
-                git branch:'master', url:''https://github.com/shrumans/Mavenproject.git'
+                git branch:'master', url:'https://github.com/shrumans/Mavenproject.git'
             }
         }
         
