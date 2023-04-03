@@ -1,0 +1,24 @@
+pipeline{
+    agent any
+    
+    tools{
+     maven "MAVEN_HOME"
+    }
+    
+    stages{
+        stage('Preparation'){
+            steps{
+                git branch:'main', url:'https://github.com/Raghugithub9/MavenPageFactory.git'
+            }
+        }
+        
+    
+       
+    stage('Build'){
+        steps{
+         bat "mvn clean test"
+        }
+    }    
+    }
+    
+}
